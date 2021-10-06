@@ -15,7 +15,7 @@ const toggleUserState = (allUsers, userName) => {
   });
 };
 
-const logger = (updatedUsers) => console.table(updatedUsers);
+const loggerEx2 = (updatedUsers) => console.table(updatedUsers);
 
 /*
  * Сейчас работает так
@@ -26,5 +26,5 @@ const logger = (updatedUsers) => console.table(updatedUsers);
 /*
  * Должно работать так
  */
-toggleUserState(users, "Mango").then(logger);
-toggleUserState(users, "Lux").then(logger);
+toggleUserState(users, "Mango").then(loggerEx2);
+toggleUserState(users, "Lux").then(loggerEx2);
